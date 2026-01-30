@@ -1,23 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title >Plantilla</title>
+    <title>Plantilla</title>
+    <style>
+        :root {
+            --azul: #427AB5;
+            --principal: #C83232;
+            --fondo: #F8F9FA;
+            --texto: #222;
+            --jugadores: #FFFFFF;
+        }
+
+        .menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        header {
+            background: linear-gradient(90deg, var(--azul) 0%, var(--principal) 100%);
+            color: white;
+            padding: 18px 24px
+        }
+
+        .presentacion {
+            display: flex;
+            align-items: center;
+        }
+
+        .presentacion img {
+                height: 60px;
+            }
+    </style>
+
 </head>
+
 <body>
-    <h1 style="text-align: center; font-size: 50px; color: #07008f;"><u>Acerca de este club...</u></h1>
-    <nav class="menu">
-        <a href="Cristian.HTML">Plantilla</a>
-        <a href="Main.HTML">Pagina Principal</a>
-    </nav>
-    <hr>  
-    <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center; font-size: 20px;">Fundado agosto del 2025, el club representa nuestro amor hacia chatgpt y java.
-         Nuestros colores rojo y blanco,son un simbolo de  los errores de java, github y sql.</p>
-         <p style="text-align: center;"><strong><em>en memoria de los caidos chepe y xavi</em></strong></p>
-    <h2>jugadores:</h2>
+    <header>
+        <div class="presentacion">
+            <img src="../Images/logo.png" alt="logo">
+            <h1 style="text-align: center; font-size: 50x; color: white; margin: auto;"><u>Acerca de este club:</u></h1>
+            <nav class="menu">
+                <a href="Cristian.HTML" style="color: white;">Plantilla</a>
+                <a href="Main.HTML" style="color: white;">Pagina Principal</a>
+            </nav>
+        </div>
+    </header>
+
+    <hr>
+    <div class="container">
+        <p
+            style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center; font-size: 20px; max-width: 120ch; margin: 0%;">
+            Fundado agosto del 2025, el club Athletic Java nace y representa nuestro amor hacia chatgpt y java.
+            Siendo un simbolo de nuestra unidad y perseverancia al ser un club renaciente del ya existo Deportivo Java.
+            Nuestros colores rojo y blanco,son un simbolo de los errores de java, github y sql.
+        </p>
+        <h3>Datos del club:</h3>
+        <p>
+            Fundado: 2025 <br>
+            Basado en: Deportivo Java <br>
+            Colores del club: Rojo y blanco <br>
+            Filosofía: 0 defensas, 1 portero, 5 delanteros
+        </p>
+        <h2>Foto del equipo temporada 24/25:</h2>
+    </div>
     <div style="text-align: center;">
-    <img src="../Images/img002.png" alt="Equipo">
-</div>
+        <img src="../Images/img002.png" alt="Equipo">
+    </div>
+    <p style="text-align: center;"><strong><em>en memoria de los caidos chepe y xavi</em></strong></p>
+    <p style="text-align: center;"><strong><em>(enero 2025- octubre 2025)</em></strong></p>
+
 </body>
+
 </html>
