@@ -1,0 +1,93 @@
+.card {
+    width: 250px;
+    background: #1a1a1a; 
+    border-radius: 15px;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border: 1px solid #333;
+}
+
+.photo {
+    height: 180px;
+    background: #2ecc71; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgba(255,255,255,0.5);
+}
+
+.player-info {
+    padding: 15px;
+}
+
+.player-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.number {
+    background: #f1c40f; 
+    color: black;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+.player-pos {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #bdc3c7;
+    letter-spacing: 1px;
+}
+
+        :root{
+            --azul:#427AB5; 
+            --principal:#C83232; 
+            --fondo:#F8F9FA;
+            --texto:#222;
+            --jugadores:#FFFFFF;
+        }
+        *{box-sizing:border-box}
+        body{font-family: Arial, Helvetica, sans-serif;margin:0;background:var(--fondo);color:var(--texto)}
+        header{background:linear-gradient(90deg,var(--azul) 0%,var(--principal) 100%);color:white;padding:18px 24px}
+        .container{max-width:1100px;margin:0 auto;padding:20px}
+        .brand{display:flex;align-items:center;gap:12px}
+        .crest{width:56px;height:56px;border-radius:12px;background:radial-gradient(circle at 30% 30%, #fff6 0%, #ffffff00 40%),rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;font-weight:700}
+        nav{margin-top:10px}
+        nav a{color:rgba(255,255,255,.95);text-decoration:none;margin-right:18px;font-weight:600}
+        .hero{padding:40px 0;color:black}
+        .hero h1{margin:6px 0;font-size:28px}
+        .hero p{margin:0;opacity:.95}
+
+        /* codigo de los jugadores */
+        .roster{margin-top:26px}
+        .roster-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+        .card{background:var(--jugadores);border: 2px solid #B88D4A ;border-radius:30px;padding:14px;box-shadow:0 6px 16px rgba(0,0,0,.05);display:flex;gap:10px;align-items:center}
+        .photo{width:85px;height:77px;border-radius:10px;background:linear-gradient(135deg,var(--azul),var(--principal));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px}
+        .player-info{flex:1}
+        .player-name{font-size:14px;font-weight:700;color: black;padding: 2px;}
+        .player-pos{font-size:13px;color:#666;margin-top:4px}
+        .number{background:var(--fondo);border-radius:6px;padding:6px 8px;font-weight:700;color:var(--texto);font-size:14px}
+
+        footer{padding:20px 0;text-align:center;color:#666;font-size:14px;margin-top:36px}
+
+          /* efecto para los proximos campeones*/
+        .card:hover {
+        border-color: #C83232; 
+        transform: translateY(-5px); 
+        transition: all 0.3s ease;
+        box-shadow: 0 8px 25px rgba(200, 50, 50, 0.2); 
+        
+        }
+
+        /* responsive bien pro */
+        @media (max-width:520px){
+            .brand h2{font-size:18px}
+            .hero h1{font-size:20px}
+        }
+        
