@@ -1,50 +1,3 @@
-.card {
-    width: 250px;
-    background: #1a1a1a; 
-    border-radius: 15px;
-    overflow: hidden;
-    font-family: 'Arial', sans-serif;
-    color: white;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    border: 1px solid #333;
-}
-
-.photo {
-    height: 180px;
-    background: #2ecc71; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    font-weight: bold;
-    color: rgba(255,255,255,0.5);
-}
-
-.player-info {
-    padding: 15px;
-}
-
-.player-name {
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.number {
-    background: #f1c40f; 
-    color: black;
-    padding: 2px 8px;
-    border-radius: 5px;
-    font-weight: 900;
-}
-
-.player-pos {
-    margin-top: 8px;
-    font-size: 0.9rem;
-    color: #bdc3c7;
-    letter-spacing: 1px;
-}
-
         :root{
             --azul:#427AB5; 
             --principal:#C83232; 
@@ -85,7 +38,6 @@
         
         }
 
-        /* responsive bien pro */
         @media (max-width:520px){
             .brand h2{font-size:18px}
             .hero h1{font-size:20px}
