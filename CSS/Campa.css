@@ -46,3 +46,8 @@ a {
 li{
     font-size: 20px;
 }
+
+.etiqueta{
+    text-align: center;
+    opacity: 3.5px;
+}
