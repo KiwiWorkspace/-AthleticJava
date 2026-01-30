@@ -1,11 +1,168 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Pagina web :v</title>
-  </head>
-  <body>
-    <center><h1>Hola Perros</h1></center>
-    <h1>Hola como estas ?</h1>
-    <p>Esta es la parte de roxydvl</p>
-  </body>
+<head>
+    <title>Contactos</title>
+    <style>
+.banner {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(90deg, #427AB5, #982fd4, #C83232);
+    display: flex;
+    align-items: center;       
+    justify-content: space-between; 
+    color: white;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding: 0 20px;        
+    box-sizing: border-box;   
+}
+
+
+        .cuadro-texto {
+            max-width: 600px;
+            width: 60%;
+            text-align: left;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .banner-logo {
+    width: 125px;
+    height: 125px;
+}
+
+
+        .texto-justificado {
+            text-align: justify;
+        }
+
+        .texto-centrado{
+          text-align: center;
+        }
+
+        
+
+        .derecha {
+            position: fixed;
+            top: 27%;
+            right: 40px;
+            transform: translateY(-50%);
+            text-align: right;
+            font-size: 1.1rem;
+            font-family: Arial, sans-serif;
+            font-weight: 600;
+        }
+
+        
+
+        .tarjetas {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 75px;
+            margin: 150px;
+        }
+
+        .tarjeta {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tarjeta:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(200,50,50,0.2);
+        }
+
+        .tarjeta h3 {
+            margin: 0 0 10px 0;
+            color: #C83232;
+        }
+
+        .tarjeta p {
+            margin: 5px 0;
+            font-size: 0.95rem;
+        }
+
+        .tarjeta a {
+            text-decoration: none;
+            color: #427AB5;
+            margin: 0 5px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .tarjeta a:hover {
+            color: #C83232;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px 0;
+            font-family: Arial, sans-serif;
+            color: #666;
+            margin-top: 200px;
+            background: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+<div class="banner">
+    <div class="banner-text">
+        ¡Contáctanos y forma parte del mejor equipo con espíritu deportivo!
+    </div>
+    <img src="../Images/logo.png" alt="Kiwi server logo" class="banner-logo">
+</div>
+
+  
+
+    <div class="cuadro-texto texto-justificado">
+        Athletic Java es un equipo en quien confiar, un equipo que te apoyará en tu carrera profesional.
+        Contamos con las mejores instalaciones y los mejores colaboradores: duchas, campos de entrenamiento,
+        gimnasio y centro terapéutico. Además ofrecemos transporte y entrenadores físicos especializados.
+        Un equipo con prestigio desde el 2025, con grandes jugadores que crean un ambiente confiable.
+        ¡Contáctanos!
+    </div>
+
+    <h1 class="texto-centrado">___________________________________________    </h1>
+    <h2 class="texto-centrado">Contáctanos y sigue nuestras redes sociales</h2>
+    <h3 class="texto-centrado">__________________________________________________________________________  </h3>
+
+    <div class="tarjetas">
+        <div class="tarjeta">
+            <h3>Correo</h3>
+            <p>AthleticJava@gmail.com</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Teléfono</h3>
+            <p>+502 4816 8917</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Redes Sociales</h3>
+            <p>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+                <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+                <a href="https://discord.com/" target="_blank">Discord</a>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        © Athletic Java 2026 creada por Jaime Martinez
+    </footer>
+
+</body>
 </html>
