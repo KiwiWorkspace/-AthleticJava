@@ -1,11 +1,156 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plantilla</title>
+    <title>Equipo - Plantilla</title>
+    <style>
+        :root{
+            --azul:#427AB5; 
+            --principal:#C83232; 
+            --fondo:#F8F9FA;
+            --texto:#222;
+            --jugadores:#FFFFFF;
+        }
+        *{box-sizing:border-box}
+        body{font-family: Arial, Helvetica, sans-serif;margin:0;background:var(--fondo);color:var(--texto)}
+        header{background:linear-gradient(90deg,var(--azul) 0%,var(--principal) 100%);color:white;padding:18px 24px}
+        .container{max-width:1100px;margin:0 auto;padding:20px}
+        .brand{display:flex;align-items:center;gap:12px}
+        .crest{width:56px;height:56px;border-radius:12px;background:radial-gradient(circle at 30% 30%, #fff6 0%, #ffffff00 40%),rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;font-weight:700}
+        nav{margin-top:10px}
+        nav a{color:rgba(255,255,255,.95);text-decoration:none;margin-right:18px;font-weight:600}
+        .hero{padding:40px 0;color:black}
+        .hero h1{margin:6px 0;font-size:28px}
+        .hero p{margin:0;opacity:.95}
+
+        /* codigo de los jugadores */
+        .roster{margin-top:26px}
+        .roster-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+        .card{background:var(--jugadores);border: 2px solid #B88D4A ;border-radius:30px;padding:14px;box-shadow:0 6px 18px rgba(0,0,0,.06);display:flex;gap:12px;align-items:center}
+        .photo{width:76px;height:76px;border-radius:10px;background:linear-gradient(135deg,var(--azul),var(--principal));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px}
+        .player-info{flex:1}
+        .player-name{font-size:16px;font-weight:700}
+        .player-pos{font-size:13px;color:#666;margin-top:4px}
+        .number{background:var(--fondo);border-radius:6px;padding:6px 8px;font-weight:700;color:var(--texto);font-size:14px}
+
+        footer{padding:20px 0;text-align:center;color:#666;font-size:14px;margin-top:36px}
+
+             /* efecto para los proximos campeones*/
+        .card:hover {
+        border-color: #C83232; 
+        transform: translateY(-5px); 
+        transition: all 0.3s ease;
+        box-shadow: 0 8px 25px rgba(200, 50, 50, 0.2); 
+        
+        }
+
+        /* responsive bien pro */
+        @media (max-width:520px){
+            .brand h2{font-size:18px}
+            .hero h1{font-size:20px}
+        }
+    </style>
 </head>
 <body>
-    <h1>Estos son nuestros jugadores para la temporada 2026</h1>
+    <header>
+        <div class="container">
+            <div class="brand">
+                
+                <img src="../Images/logo.png" alt="Kiwi server logo" width="70px" height="70px">
+
+                <div>
+                    <h2 style="margin:0">Athletic Java
+                    </h2>
+                    <div style="font-size:13px;opacity:.9">Temporada 2026</div>
+                </div>
+            </div>
+            <nav>
+                <a href="../HTML/Main.HTML">Inicio</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Plantilla</h1>
+            <p>Estos son nuestros jugadores de la temporada 2026 de Athletic Java</p>
+        </section>
+
+        <section id="roster" class="roster">
+            <h3 style="margin:0 0 12px 0">Jugadores</h3>
+            <div class="roster-grid">
+                <div class="card">
+                    <div class="photo">CR</div>
+                    <div class="player-info">
+                        <div style="display:flex;justify-content:space-between;align-items:center">
+                            <div class="player-name">Cristian Pérez</div>
+                            <div class="number">#7</div>
+                        </div>
+                        <div class="player-pos">Defensa </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="photo">JM</div>
+                    <div class="player-info">
+                        <div style="display:flex;justify-content:space-between;align-items:center">
+                            <div class="player-name">Jaime Martínez</div>
+                            <div class="number">#8</div>
+                        </div>
+                        <div class="player-pos">Delantero</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="photo">LA</div>
+                    <div class="player-info">
+                        <div style="display:flex;justify-content:space-between;align-items:center">
+                            <div class="player-name">Luis Argueta</div>
+                            <div class="number">#11</div>
+                        </div>
+                        <div class="player-pos">Centrocampista</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="photo">BC</div>
+                    <div class="player-info">
+                        <div style="display:flex;justify-content:space-between;align-items:center">
+                            <div class="player-name">Brayan Campa</div>
+                            <div class="number">#1</div>
+                        </div>
+                        <div class="player-pos">Portero</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="photo">JA</div>
+                    <div class="player-info">
+                        <div style="display:flex;justify-content:space-between;align-items:center">
+                            <div class="player-name">Jorge Álvarez</div>
+                            <div class="number">#6</div>
+                        </div>
+                        <div class="player-pos">Centrocampista</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="photo">OG</div>
+                    <div class="player-info">
+                        <div style="display:flex;justify-content:space-between;align-items:center">
+                            <div class="player-name">Oscar Guzman</div>
+                            <div class="number">#9</div>
+                        </div>
+                        <div class="player-pos">Delantero</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            © Athletic Java 2026
+        </footer>
+    </main>
 </body>
 </html>
