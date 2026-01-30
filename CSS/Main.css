@@ -13,7 +13,7 @@
 	background-position: top;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-image: url(../Images/.);
+	background-image: url(../Images/);
 }
 
 .header-text {
@@ -34,35 +34,6 @@
 	font-size: 40px;
 	text-transform: initial;
 	text-shadow: 0px 1.5px 0px #000000a2;
-}
-
-@media screen and (min-width: 320px) and (max-width: 999px) {
-	.header {
-		padding: 50px 30px;
-	}
-
-	.header-text h1 {
-		font-size: 55px;
-	}
-
-	.header-text span {
-		font-size: 16px;
-	}
-
-	@media screen and (min-width: 424px) {
-		.header-text h1 {
-			font-size: 70px;
-		}
-
-		.header-text span {
-			font-size: 26px;
-		}
-	}
-}
-
-@font-face {
-	font-family: 'Panton';
-	src: url(../Fonts/Panton.ttf);
 }
 
 body {
@@ -139,55 +110,6 @@ body {
 	background-color: #ce1414;
 }
 
-@media screen and (min-width: 320px) and (max-width: 999px) {    
-    .footer {
-        padding: 30px;
-    }
-
-    .footer-items {
-        margin: 20px 0px;
-    }
-    
-    .footer-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    @media screen and (min-width: 425px) {  
-        .footer {
-            padding: 20px;
-        }
-    }
-
-    @media screen and (min-width: 768px) {
-        .sp-2 {
-            display: none;
-        }        
-
-        .footer-container {
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row;
-        }
-
-        .footer-socials img {
-            width: 30px;
-            height: 30px;
-        }
-
-        .footer-items {
-            margin: 20px;
-        }
-    }
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1300px) {
-    .sp-2 {
-        display: none;
-    }
-}
-
 .nav {
     background:linear-gradient(90deg,var(--azul) 0%,var(--principal) 100%);
 	display: flex;
@@ -220,17 +142,20 @@ body {
 
 .nav-logo {
 	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 10px; 
 }
 
 .nav-logo h1 {
 	color: var(--secondary-tc);
-	margin: 20px 10px;
+	margin: 0;
 	font-size: 30px;
 	text-transform: uppercase;
 }
 
 .nav-logo h1::after {
-	content: '  ';
+	content: '';
 	width: 70%;
 	height: 2px;
 	margin: auto;
@@ -267,109 +192,6 @@ body {
 	margin-left: 10px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 999px) {
-	.nav {
-		display: none;
-	}
-
-	.nav-mobile {
-		color: var(--secondary-tc);
-		background-color: var(--secondary-bc);
-	}
-
-	.nav-mobile-title {
-		font-family: 'Panton';
-		padding: 5px 15px;
-		justify-content: space-between;
-		text-transform: uppercase;
-	}
-
-	.nav-mobile-title img {
-		margin-right: 5px;
-	}
-
-	.navbars-bars {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		cursor: pointer;
-	}
-
-	.bar {
-		width: 28px;
-		height: 3px;
-		background-color: white;
-		margin: 3px;
-		transition: all 0.3s ease-in-out;
-	}
-
-	.nav-mobile-menu {
-		display: none !important;
-		animation-duration: 0.5s;
-		animation-fill-mode: forwards;
-		padding: 20px 0px;
-		border-top: 2px solid #fff;
-		border-bottom: 2px solid #fff;
-	}
-
-	.nav-mobile-menu.active {
-        display: flex !important;
-		flex-direction: column;
-		align-items: center;
-		animation-name: slideDown;
-		animation-duration: 0.65s;
-		margin: 0;
-	}
-
-	.nav-mobile-menu a,
-	.nav-mobile-especial a {
-		font-family: 'Panton';
-		color: var(--secondary-tc);
-		text-decoration: none;
-		padding: 15px 0px;
-		width: 100%;
-		text-align: center;
-		text-transform: uppercase;
-		margin: 5px 0px;
-	}
-
-	.nav-mobile-menu a:hover {
-		color: var(--primary-tc);
-		background-color: var(--primary-bc);
-	}
-
-	.navbars-bars.active > .bar-2 {
-		width: 60%;
-		margin-left: -15%;
-	}
-
-	.navbars-bars.active > .bar-3 {
-		width: 40%;
-		margin-left: -35%;
-	}
-}
-
-@media only screen and (min-width: 1000px) {
-    .nav-mobile {
-        display: none;
-    }
-
-    .m-mobile-title {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 1000px) and (max-width: 1329px) {
-
-    .nav-item-4 {
-        display: none;
-    }
-    
-    .nav-item-1 {
-        display: none;
-    }
-}
 .discover {
 	padding: 40px;
 	display: flex;
@@ -397,12 +219,24 @@ body {
 	margin: 0 auto;
 }
 
-.carousel {
-	display: flex;
-	flex-direction: column;
+.carousel-item {
+	display:flexbox;
 	align-items: center;
-	position: relative;
+	gap: 20px;
+    padding: 30px;
 }
+
+.carousel-item img {
+	width: 250px; 
+	height: auto;
+	border-radius: 10px;
+}
+
+.carousel-item h2,
+.carousel-item p {
+	margin: 0;
+}
+
 
 .carousel-item {
 	display: flex;
@@ -410,11 +244,12 @@ body {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	max-width: 620px;
+	max-width: 400px;
 	opacity: 0;
 	transition: opacity 1s ease-in;
-	position: absolute; /* Para que las imágenes se superpongan */
+	position: absolute; 
 }
+
 
 .carousel-item.active {
 	opacity: 1;
@@ -422,18 +257,6 @@ body {
 	z-index: 1;
 }
 
-.carousel-item img {
-	width: 738px;
-	height: 380px;
-	border: 4px solid #76c3d3;
-	box-shadow: 0px 5px 0px #76c3d3;
-	border-radius: 5px;
-}
-
-.carousel-item h2 {
-	font-size: 36px;
-	margin: 15px 0px 0px 0px;
-}
 
 .carousel-radio {
 	display: flex;
@@ -458,78 +281,6 @@ body {
 .radio-input:checked+.radio-label {
 	background-color: white;
 	transform: scale(1.5);
-}
-
-@media screen and (min-width: 320px) and (max-width: 999px) {
-	.discover {
-		padding: 30px;
-	}
-
-	.discover h1 {
-		font-size: 30px;
-	}
-
-	.carousel-item img {
-		border: 1px solid #76c3d3;
-		width: 247px;
-		height: 127px;
-	}
-
-	.carousel-item {
-		margin-top: 20px;
-	}
-
-	.carousel-item h2 {
-		font-size: 20px;
-	}
-
-	.carousel-item p {
-		font-size: calc(100% - 30%);
-	}
-
-	.radio-label {
-		margin-top: 10px;
-	}
-
-	@media screen and (min-width: 374px) {
-		.discover h1 {
-			font-size: 40px;
-		}
-
-		.carousel-item img {
-			width: 296.4px;
-			height: 152.4px;
-		}
-	}
-
-	@media screen and (min-width: 424px) {
-		.carousel-item h2 {
-			font-size: 26px;
-		}
-
-		.carousel-item p {
-			font-size: 14px;
-		}
-	}
-
-	@media screen and (min-width: 767px) {
-		.discover h1 {
-			font-size: 60px;
-		}
-
-		.carousel-item h2 {
-			font-size: 34px;
-		}
-
-		.carousel-item p {
-			font-size: 17px;
-		}
-
-		.carousel-item img {
-			width: 533.52px;
-			height: 274.32px;
-		}
-	}
 }
 
 .carousel {
@@ -580,14 +331,13 @@ body {
 }
 
 .carousel-item img {
-	width: 738px;
-	height: 380px;
+	width: 400px;
+	height: 130px;
 	border: 4px solid #76c3d3;
 	box-shadow: 0px 5px 0px #76c3d3;
 	border-radius: 5px;
 }
 
-/* Flechas de control */
 .carousel-control {
     position: absolute;
     top: 50%;
