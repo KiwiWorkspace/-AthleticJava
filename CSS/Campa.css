@@ -1,0 +1,32 @@
+
+        :root {
+            --azul: #427AB5;
+            --principal: #C83232;
+            --fondo: #F8F9FA;
+            --texto: #222;
+            --jugadores: #FFFFFF;
+        }
+
+        .menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        header {
+            background: linear-gradient(90deg, var(--azul) 0%, var(--principal) 100%);
+            color: white;
+            padding: 18px 24px
+        }
+
+        .presentacion {
+            display: flex;
+            align-items: center;
+        }
+
+        .presentacion img {
+            height: 60px;
+        }
+
+        div text{
+            text-align: center;
+        }
